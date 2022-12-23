@@ -1,0 +1,153 @@
+
+/* UNIVERSAL VARIABLES */
+:root {
+    --royal-blue-dark: #12164d;
+    --pale-spring-bud : #ede9b2;
+    --xandu: #798478;
+    /* Pacifico font declaration */
+    --heading-font: "Pacifico", sans-serif;
+    /* Quicksand font declaration */
+    --body-font: "Quicksand", sans-serif;
+}
+
+
+/* BODY ON DESKTOP */
+body {
+    background-color: var(--royal-blue-dark);
+    margin: auto;
+    width: 90%;
+    color: var(--pale-spring-bud);
+}
+
+
+
+/* HEADER ON DESKTOP */
+header {
+    font-family: var(--heading-font);
+
+}
+header img {
+    margin-bottom: 0;
+}
+header h1 {
+    margin-top: 0;
+}
+
+
+/* MAIN PAGE ON DESKTOP */
+#content-wrapper {
+
+    font-family: var(--body-font);
+    float: left;
+    width: 80%;
+    position: relative;
+    min-height: 100vh;
+
+    /* Footer stuff */
+    overflow: auto;
+    padding-bottom: 80px; /* must be same height as the footer */
+}
+/* SIDEBAR ON DESKTOP */
+nav {
+    float: left;
+    width: 50%;
+}
+nav ul {
+    list-style: none;
+}
+nav a:link {
+    color: var(--pale-spring-bud);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--xandu);
+}
+nav a:visited {
+    color: var(--pale-spring-bud);
+}
+nav a:visited:hover {
+    color: var(--xandu);
+}
+/* CONTENT ON DESKTOP */
+#content {
+    float: left;
+    width: 50%;
+}
+#content p {
+    margin: 5%;
+}
+#content h3 {
+    text-align: right;
+}
+#content h5 {
+    text-align: right;
+}
+/* FOOTER ON DESKTOP */
+footer{
+    font-family: var(--body-font);
+    text-align: center;
+    position: relative;
+
+    margin-top: -80px; /* negative value of footer height */
+    height: 80px;
+    clear: both;
+}
+
+
+
+
+
+
+/* DISPLAY SETTINGS FOR MOBILE */
+@media only screen and (max-width: 575px) {
+
+    /* PAGE ON MOBILE */
+    body {
+        background-color: var(--royal-blue-dark);
+        color: var(--pale-spring-bud);
+        margin: auto;
+        width: 90%;
+    }
+
+
+
+    /* HEADER ON MOBILE */
+    header {
+
+    }
+
+
+
+    /* MAIN PAGE ON MOBILE */
+    main {
+        padding-top: 10px;
+
+
+    }
+    /* NAVBAR ON MOBILE */
+    nav {
+        width: 100%;
+    }
+    /* NAV LINKS ON MOBILE */
+    nav a:link {
+        color: var(--pale-spring-bud);
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: var(--xandu);
+    }
+    nav a:visited {
+        color: var(--pale-spring-bud);
+    }
+    nav a:visited:hover {
+        color: var(--xandu);
+    }
+    /* CONTENT ON MOBILE */
+    #content {
+        width: 100%;
+    }
+
+
+
+
+}
